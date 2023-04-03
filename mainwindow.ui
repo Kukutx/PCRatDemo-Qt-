@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>751</width>
+    <height>505</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="maximumSize">
+    <size>
+     <width>16777215</width>
+     <height>16777215</height>
+    </size>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="totalLayout" stretch="0,3,1">
+      <item>
+       <layout class="QHBoxLayout" name="toolBarLayout">
+        <item>
+         <layout class="QVBoxLayout" name="fileManagerLayout" stretch="0,0">
+          <item>
+           <widget class="ControlToolBar" name="btn_FileManager">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="fileManager_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="text">
+             <string>文件管理</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="remoteTerminalLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_RemoteTerminal">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="remoteTerminal_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>远程终端</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="keyLoggerLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_KeyLogger">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="keyLogger_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>键盘记录</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="screenControlLayout" stretch="0,0">
+          <property name="sizeConstraint">
+           <enum>QLayout::SetDefaultConstraint</enum>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="ControlToolBar" name="btn_ScreenControl">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="screenControl_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>屏幕控制</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="videoControlLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_VideoControl">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="videoControl_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>视频控制</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="voiceMonitorLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_VoiceMonitor">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="voiceManager_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>语音监听</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="sysManagerLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_SysManager">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="sysManager_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>系统管理</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="registryManagerLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_RegistryManeger">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="registryManager_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>注册表管理</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="Line" name="line">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="settingLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_Setting">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="setting_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>设置</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="aboutLayout">
+          <item>
+           <widget class="ControlToolBar" name="btn_About">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="about_label">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>20</height>
+             </size>
+            </property>
+            <property name="text">
+             <string>关于</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <widget class="ControlTableWidget" name="ControlPanel">
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </row>
+        <row>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>IP</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>区域</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>计算机名/备注</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>操作系统</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>CPU</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>摄像头</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>PING</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>192.168.1.0</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>中国2423443424443424</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>kukutx</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>windows10</string>
+         </property>
+        </item>
+        <item row="0" column="4">
+         <property name="text">
+          <string>intel2.2GHZ</string>
+         </property>
+        </item>
+        <item row="0" column="5">
+         <property name="text">
+          <string>Yes</string>
+         </property>
+        </item>
+        <item row="0" column="6">
+         <property name="text">
+          <string>65533</string>
+         </property>
+        </item>
+        <item row="1" column="0">
+         <property name="text">
+          <string>192.168.1.1</string>
+         </property>
+        </item>
+        <item row="1" column="1">
+         <property name="text">
+          <string>本地局域网787878777878787878787878777</string>
+         </property>
+        </item>
+        <item row="1" column="2">
+         <property name="text">
+          <string>Cmtx</string>
+         </property>
+        </item>
+        <item row="1" column="3">
+         <property name="text">
+          <string>linux</string>
+         </property>
+        </item>
+        <item row="1" column="4">
+         <property name="text">
+          <string>AMD</string>
+         </property>
+        </item>
+        <item row="1" column="5">
+         <property name="text">
+          <string>no</string>
+         </property>
+        </item>
+        <item row="1" column="6">
+         <property name="text">
+          <string>0</string>
+         </property>
+        </item>
+        <item row="2" column="0">
+         <property name="text">
+          <string>192.168.1.2</string>
+         </property>
+        </item>
+        <item row="2" column="1">
+         <property name="text">
+          <string>本地局域网787878777878787878787878777</string>
+         </property>
+        </item>
+        <item row="2" column="2">
+         <property name="text">
+          <string>admin</string>
+         </property>
+        </item>
+        <item row="2" column="3">
+         <property name="text">
+          <string>macos</string>
+         </property>
+        </item>
+        <item row="2" column="4">
+         <property name="text">
+          <string>ARM</string>
+         </property>
+        </item>
+        <item row="2" column="5">
+         <property name="text">
+          <string>yes</string>
+         </property>
+        </item>
+        <item row="2" column="6">
+         <property name="text">
+          <string>1111</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="ControlTableWidget" name="LogMessagePanel">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>90</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>999999</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true"/>
+        </property>
+        <property name="showGrid">
+         <bool>false</bool>
+        </property>
+        <property name="sortingEnabled">
+         <bool>true</bool>
+        </property>
+        <attribute name="verticalHeaderVisible">
+         <bool>false</bool>
+        </attribute>
+        <row>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </row>
+        <column>
+         <property name="text">
+          <string>信息类型</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>时间</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>日期</string>
+         </property>
+        </column>
+        <column>
+         <property name="text">
+          <string>信息内容</string>
+         </property>
+        </column>
+        <item row="0" column="0">
+         <property name="text">
+          <string>执行成功</string>
+         </property>
+        </item>
+        <item row="0" column="1">
+         <property name="text">
+          <string>21:55</string>
+         </property>
+        </item>
+        <item row="0" column="2">
+         <property name="text">
+          <string>2023/1/12</string>
+         </property>
+        </item>
+        <item row="0" column="3">
+         <property name="text">
+          <string>1111111</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>751</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="settingMenu">
+    <property name="title">
+     <string>设置</string>
+    </property>
+    <addaction name="actionSetArg"/>
+    <addaction name="actionCrtSrv"/>
+   </widget>
+   <widget class="QMenu" name="fileMenu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionEsc"/>
+   </widget>
+   <widget class="QMenu" name="aboutMenu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <addaction name="fileMenu"/>
+   <addaction name="settingMenu"/>
+   <addaction name="aboutMenu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionEsc">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionSetArg">
+   <property name="text">
+    <string>参数设置</string>
+   </property>
+  </action>
+  <action name="actionCrtSrv">
+   <property name="text">
+    <string>生成服务端</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ControlTableWidget</class>
+   <extends>QTableWidget</extends>
+   <header location="global">ControlTableWidget.h</header>
+  </customwidget>
+  <customwidget>
+   <class>ControlToolBar</class>
+   <extends>QPushButton</extends>
+   <header location="global">ControlToolBar.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

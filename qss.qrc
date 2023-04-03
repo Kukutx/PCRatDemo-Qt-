@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/qss"/>
+    <qresource prefix="/">
+        <file>Resources/qss/tableWidget.qss</file>
+        <file>Resources/icon/SystemTrayIcon/close.ico</file>
+        <file>Resources/icon/SystemTrayIcon/show.ico</file>
+        <file>Resources/icon/SystemTrayIcon/tray.ico</file>
+        <file>Resources/icon/ToolBarIcon/filemanager.ico</file>
+        <file>Resources/icon/ToolBarIcon/keylogger.ico</file>
+        <file>Resources/icon/ToolBarIcon/powershell.ico</file>
+        <file>Resources/icon/ToolBarIcon/registry.ico</file>
+        <file>Resources/icon/ToolBarIcon/screen.ico</file>
+        <file>Resources/icon/ToolBarIcon/sysmanager.ico</file>
+        <file>Resources/icon/ToolBarIcon/terminal.ico</file>
+        <file>Resources/icon/ToolBarIcon/video.ico</file>
+        <file>Resources/icon/ToolBarIcon/voice.ico</file>
+        <file>Resources/icon/ToolBarIcon/about.ico</file>
+        <file>Resources/icon/ToolBarIcon/setting.ico</file>
+    </qresource>
+</RCC>

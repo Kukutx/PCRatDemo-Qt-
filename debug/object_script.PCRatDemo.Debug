@@ -1,0 +1,16 @@
+debug/ControlStatusBar.o
+debug/ControlSysTray.o
+debug/ControlTableWidget.o
+debug/ControlToolBar.o
+debug/NetworkProcessing.o
+debug/ShowMessage.o
+debug/TableMenuManagement.o
+debug/main.o
+debug/mainwindow.o
+debug/terminalwidget.o
+debug/qrc_qss.o
+debug/moc_ControlStatusBar.o
+debug/moc_ControlSysTray.o
+debug/moc_ControlTableWidget.o
+debug/moc_mainwindow.o
+debug/moc_terminalwidget.o

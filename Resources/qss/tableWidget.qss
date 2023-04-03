@@ -1,0 +1,18 @@
+﻿/* 针对表格内容颜色变化 */
+QTableWidget {
+    selection-background-color: #3399ff;    /* 选中时行变蓝色 */
+    selection-color: white;                 /* 默认白色 */
+}
+/* 对菜单栏的样式 */
+QMenu{
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+QMenu::item {
+    background-color: transparent;
+    padding:3px 20px;
+    margin:5px 10px;
+}
+QMenu::item:selected {
+    background-color: gray;
+}
